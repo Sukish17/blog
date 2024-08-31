@@ -1,7 +1,7 @@
 import {Component} from 'react'
 import Cookies from 'js-cookie'
 import {Redirect} from 'react-router-dom'
-
+import { GiBookAura } from "react-icons/gi"
 import './index.css'
 
 class LoginForm extends Component {
@@ -126,41 +126,33 @@ class LoginForm extends Component {
         <div className="login-desktop-img-container">
           <img
             className="login-desktop-img"
-            src="https://res.cloudinary.com/dinhpbueh/image/upload/v1662553915/LoginImageDesktop_w3keid.png"
-            alt=""
+            src="https://wallpapercave.com/wp/wp13927581.jpg"
+            alt="sea"
           />
         </div>
+        
         <div className="form-container">
-          <img
+        
+          <GiBookAura
             className="login-mobile-img"
-            src="https://res.cloudinary.com/dinhpbueh/image/upload/v1662553670/Ellipse_99_gsgnqs.png"
-            alt="website login"
           />
-          <img
+          <GiBookAura
             className="login-website-logo"
-            src="https://res.cloudinary.com/dinhpbueh/image/upload/v1662553813/BookHub_qnzptf.png"
-            alt="login website logo"
           />
           <form className="form" onSubmit={this.submitForm}>
             <div className="input-container">{this.renderUsernameField()}</div>
             <div className="input-container">{this.renderPasswordField()}</div>
             <div className="input-container">{this.renderCheckbox()}</div>
-            <div>
-              <p>
-                <b>Username : </b> rahul
-              </p>
-              <p>
-                <b>Password : </b>
-                rahul@2021
-              </p>
-            </div>
             <button type="submit" className="login-button">
               Login
             </button>
+            <marquee direction="left" className="hlo"> username: <span className='name'>rahul </span>
+            password: <span className='name'>rahul@2021</span></marquee>
             {showSubmitError && <p className="error-message">*{errorMsg}</p>}
           </form>
         </div>
       </div>
+      
     )
   }
 }

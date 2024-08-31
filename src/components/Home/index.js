@@ -23,7 +23,7 @@ const Home = () => (
           <div className="home-container">
             <div className="home-content">
               <h1 className={`home-heading ${darkHeadingText}`}>
-                Find Your Next Favorite Books?
+                Are You Looking For Your Next Favorite Books?
               </h1>
               <p className={`home-description ${darkDescriptionText}`}>
                 You are in the right place. Tell us what titles or genres you

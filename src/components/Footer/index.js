@@ -15,7 +15,7 @@ const Footer = () => (
             <FaPhoneSquareAlt className={`footer-icon ${footerDarkText}`} />
 
             <a
-              href="https://www.linkedin.com/in/vijaykumarpeddagari/"
+              href="https://www.linkedin.com/in/sukishkavi/"
               target="__blank"
               rel="noopener noreferrer"
               className="footer-icon-button"
@@ -23,7 +23,7 @@ const Footer = () => (
               <FaLinkedin className={`footer-icon ${footerDarkText}`} />
             </a>
             <a
-              href="https://github.com/VijayKumarPeddagari/ccbp-book-hub"
+              href="https://github.com/Sukish17"
               target="__blank"
               rel="no opener no referrer"
               className="footer-icon-button"
@@ -35,7 +35,7 @@ const Footer = () => (
           </div>
           <p className={`contact-us-text ${footerDarkText}`}>Contact us</p>
           <p className={`contact-us-text ${footerDarkText}`}>
-            Copyright @2024 <i>Koushik Koppolu</i>
+            Copyright @2024 <i>Sukishkavi</i>
           </p>
         </div>
       )

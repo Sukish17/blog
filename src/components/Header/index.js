@@ -5,6 +5,7 @@ import Cookies from 'js-cookie'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {AiFillCloseCircle} from 'react-icons/ai'
 import {RiSunFill} from 'react-icons/ri'
+import { GiBookAura } from "react-icons/gi"
 
 import './index.css'
 import NavItem from '../NavItem'
@@ -109,13 +110,14 @@ class Header extends Component {
         return (
           <div className="nav-bar-large-container">
             <Link to="/">
-              <img
+              <GiBookAura
                 className="website-logo"
-                src="https://res.cloudinary.com/gottumukkala/image/upload/v1670324059/Book%20Hub%20Mini%20Project/Group_7731logo_fegx8c.png"
-                alt="website logo"
                 onClick={onClickWebsiteLogo}
               />
             </Link>
+
+
+
             <ul className="nav-menu">
               {navItems.map(eachItem => (
                 <NavItem
@@ -168,10 +170,8 @@ class Header extends Component {
               <div className="nav-content">
                 <div className="nav-bar-mobile-logo-container">
                   <Link to="/">
-                    <img
+                    <GiBookAura
                       className="website-logo"
-                      src="https://res.cloudinary.com/gottumukkala/image/upload/v1670324059/Book%20Hub%20Mini%20Project/Group_7731logo_fegx8c.png"
-                      alt="website logo"
                       onClick={onClickWebsiteLogo}
                     />
                   </Link>
